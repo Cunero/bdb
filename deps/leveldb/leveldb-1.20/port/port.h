@@ -14,6 +14,8 @@
 #  include "port_uv.h"
 #elif defined(LEVELDB_PLATFORM_POSIX)
 #  include "port/port_posix.h"
+#elif defined(LEVELDB_PLATFORM_CHROMIUM)
+#  include "port/port_chromium.h"
 #endif
 
 #endif  // STORAGE_LEVELDB_PORT_PORT_H_

@@ -20,6 +20,9 @@
         "cflags!": [ "-fno-tree-vrp"]
       }],
       ["OS == 'android'", {
+        "defines": [
+          "__ANDROID_API__=36"
+        ],
         "cflags": [ "-fPIC" ],
         "ldflags": [ "-fPIC" ],
         "cflags!": [
